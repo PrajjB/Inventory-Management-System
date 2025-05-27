@@ -79,4 +79,18 @@ router.delete('/deleteproduct/:id', async (req, res) => {
     }
 })
 
+//Searching and Printing Data:
+router.get('/products/barcode/:barcode', async (req, res) => {
+  const { barcode } = req.params;
+  try {
+    const product = await products.findOne({ ProductBarcode: barcode }).exec();
+    if (product) {
+      res.json(product);
+    } else {
+      res.status(404).json({ message: 'Product not found.' });
+    }
+  } catch (err) {
+    res.status(500).json({ message: 'Server error.' });
+  }
+});
 module.exports = router;

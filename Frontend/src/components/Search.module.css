@@ -7,7 +7,7 @@
 .display{
     display: flex;
     width: 100vw;
-    height: 50vh;
+    height: 12vh;
     margin-top: 75px;
     justify-content: center;  
 }
@@ -39,7 +39,7 @@
 .formControl label {
   position: absolute;
   top: 15px;
-  left: 15px;
+  left: 8px;
   pointer-events: none;
 }
 
@@ -55,4 +55,124 @@
 .formControl input:valid+label span {
   color: #00b4d8;
   transform: translateY(-30px);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.error {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 500px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FCE8DB;
+  border-radius: 8px;
+  border: 1px solid #EF665B;
+  box-shadow: 0px 0px 5px -3px #111;
+}
+
+.error__icon {
+  width: 20px;
+  height: 20px;
+  transform: translateY(-2px);
+  margin-right: 8px;
+}
+
+.error__icon path {
+  fill: #EF665B;
+}
+
+.error__title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #71192F;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  15% { transform: translateX(-10px); }
+  30% { transform: translateX(10px); }
+  45% { transform: translateX(-10px); }
+  60% { transform: translateX(10px); }
+  75% { transform: translateX(-6px); }
+  90% { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.shake {
+  animation: shake 0.6s ease-in-out;
+}
+
+.fadeOut {
+  animation: fadeOut 2s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.card {
+  width: 800px;
+  background: rgb(44, 44, 44);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  overflow: hidden;
+}
+
+.card__title {
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-bottom: 1px solid rgb(167, 159, 159);
+  font-size: 2rem;
+}
+
+.card__data {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid rgb(203, 203, 203);
+  border-left: 1px solid rgb(203, 203, 203);
+  border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.card__right {
+  width: 60%;
+  border-right: 1px solid rgb(203, 203, 203);
+}
+
+.card__left {
+  width: 40%;
+  text-align: end;
+}
+
+.item {
+  padding: 3px 0;
+  background-color: white;
+}
+
+.card__right .item {
+  padding-left: 0.8em;
+}
+
+.card__left .item {
+  padding-right: 0.8em;
+}
+
+.item:nth-child(even) {
+  background: rgb(234, 235, 234);
 }
