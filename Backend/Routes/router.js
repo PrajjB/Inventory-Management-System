@@ -79,5 +79,4 @@ router.delete('/deleteproduct/:id', async (req, res) => {
     }
 })
 
-
 module.exports = router;
