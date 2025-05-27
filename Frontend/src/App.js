@@ -5,6 +5,7 @@ import Products from './components/Products';
 import InsertProduct from './components/InsertProduct'
 import UpdateProduct from './components/UpdateProduct';
 import About from './components/About';
+import Search from './components/Search'
 
 import {
   BrowserRouter as Router,
@@ -23,6 +24,7 @@ function App() {
 
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/search" element={< Search />} />
           <Route path="/products" element={<Products />} />
           <Route path="/insertproduct" element={<InsertProduct />} />
           <Route path="/updateproduct/:id" element={<UpdateProduct />} />
