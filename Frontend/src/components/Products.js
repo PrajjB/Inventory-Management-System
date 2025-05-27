@@ -56,8 +56,6 @@ export default function Products() {
 
     return (
         <>
-
-
             <div className='container-fluid p-5'>
                 <h1>Products Inventory</h1>
                 <div className='add_button'>
@@ -101,7 +99,6 @@ export default function Products() {
                 </div>
 
             </div>
-
         </>
     )
 }

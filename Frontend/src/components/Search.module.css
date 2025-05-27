@@ -33,7 +33,7 @@
 .formControl input:focus,
 .formControl input:valid {
   outline: 0;
-  border-bottom-color: Black;
+  border-bottom-color: #00b4d8;
 }
 
 .formControl label {
@@ -53,6 +53,6 @@
 
 .formControl input:focus+label span,
 .formControl input:valid+label span {
-  color: black;
+  color: #00b4d8;
   transform: translateY(-30px);
 }
