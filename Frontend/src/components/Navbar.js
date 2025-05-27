@@ -1,17 +1,15 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-import "./Navbar.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import styles from './Navbar.module.css';
 
 
 export default function Navbar(props) {
   const navigate = useNavigate();
   return (
-<div class="button-container">
-  <button class="button" onClick={() => navigate("/")}>
+<div className={styles.buttonContainer}>
+  <button className={styles.button} onClick={() => navigate("/")}>
     <svg
-      class="icon"
+      className={styles.icon}
       stroke="currentColor"
       fill="currentColor"
       stroke-width="0"
@@ -25,9 +23,9 @@ export default function Navbar(props) {
       ></path>
     </svg>
   </button>
-  <button class="button" onClick={() => navigate("/search")}>
+  <button className={styles.button} onClick={() => navigate("/search")}>
     <svg
-      class="icon"
+      className={styles.icon}
       stroke="currentColor"
       fill="none"
       stroke-width="2"
@@ -44,9 +42,9 @@ export default function Navbar(props) {
       ></path>
     </svg>
   </button>
-  <button class="button" onClick={() => navigate("/products")}>
+  <button className={styles.button} onClick={() => navigate("/products")}>
     <svg
-      class="icon"
+      className={styles.icon}
       stroke="currentColor"
       fill="currentColor"
       stroke-width="0"
@@ -59,9 +57,9 @@ export default function Navbar(props) {
     </svg>
   </button>
 
-  <button class="button" onClick={() => navigate("/about")}>
+  <button className={styles.button} onClick={() => navigate("/about")}>
     <svg
-      class="icon"
+      className={styles.icon}
       stroke="currentColor"
       fill="none"
       stroke-width="2"

@@ -1,10 +1,12 @@
-import './Search.css'
+import React from 'react';
+import styles from './Search.module.css';
+
 export default function Search() {
     return (
         <div>
-            <h1>Search the barcode for the item you are looking for!</h1>
-            <div class="display">
-                <div className="form-control">
+            <h1 className={styles.heading}>Search the barcode for the item you are looking for!</h1>
+            <div className={styles.display}>
+                <div className={styles.formControl}>
                     <input type="value" required />
                     <label>
                     <span style={{ transitionDelay: "0ms" }}>E</span>

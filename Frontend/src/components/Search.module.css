@@ -1,7 +1,7 @@
-h1{
+.heading{
     display:flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .display{
@@ -12,14 +12,14 @@ h1{
     justify-content: center;  
 }
 
-.form-control {
+.formControl {
   position: absolute;
   margin: 20px 0 40px;
   width: 75vw;
   border: none;
 }
 
-.form-control input {
+.formControl input {
   background-color: transparent;
   border: 0;
   border-bottom: 2px Black solid;
@@ -30,20 +30,20 @@ h1{
   color: black;
 }
 
-.form-control input:focus,
-.form-control input:valid {
+.formControl input:focus,
+.formControl input:valid {
   outline: 0;
   border-bottom-color: Black;
 }
 
-.form-control label {
+.formControl label {
   position: absolute;
   top: 15px;
   left: 15px;
   pointer-events: none;
 }
 
-.form-control label span {
+.formControl label span {
   display: inline-block;
   font-size: 18px;
   min-width: 5px;
@@ -51,8 +51,8 @@ h1{
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.form-control input:focus+label span,
-.form-control input:valid+label span {
+.formControl input:focus+label span,
+.formControl input:valid+label span {
   color: black;
   transform: translateY(-30px);
 }
