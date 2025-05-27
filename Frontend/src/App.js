@@ -17,10 +17,10 @@ import {
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <Navbar title="IMS" about="About"></Navbar>
 
-      <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
@@ -30,10 +30,8 @@ function App() {
 
         </Routes>
 
-      </Router>
-
-
     </div>
+    </Router>
   );
 }
 
