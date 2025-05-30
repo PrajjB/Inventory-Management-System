@@ -34,7 +34,7 @@
 .formControl input:focus,
 .formControl input:valid {
   outline: 0;
-  border-bottom-color: #00b4d8;
+  border-bottom-color: #0d6efd;
 }
 
 .formControl label {
@@ -54,7 +54,7 @@
 
 .formControl input:focus+label span,
 .formControl input:valid+label span {
-  color: #00b4d8;
+  color: #0d6efd;
   transform: translateY(-30px);
 }
 
@@ -144,7 +144,7 @@
 	}
 
 .myTh { 
-	background: #3498db; 
+	background: #0d6efd; 
 	color: white; 
 	font-weight: bold; 
 	}
