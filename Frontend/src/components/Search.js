@@ -81,25 +81,31 @@ export default function Search() {
                 </div>
             </div>
 
-            {product && (
-                <>
-                    <div className={styles.card}>
-                        <div class={styles.card__title}>Product Details</div>
-                            <div className={styles.card__data}>
-                                <div class={styles.card__right}>
-                                <div className={styles.item}>Name</div>
-                                <div className={styles.item}>Price</div>
-                                <div className={styles.item}>Barcode</div>
-                                </div>
-                                <div className={styles.card__left}>
-                                <div className={styles.item}>{product.ProductName}</div>
-                                <div className={styles.item}>₹{product.ProductPrice}</div>
-                                <div className={styles.item}>{product.ProductBarcode}</div>
-                            </div>
-                        </div>
-                    </div>
-                </>
-            )}
+          {product && (
+            <div className = {styles.tableContainer}>
+              <table className={styles.myTable}>
+                <thead className={styles.myThead}>
+                  <tr className={styles.myTr}>
+                    <th className={styles.myTh} colSpan={2}>Product Details</th>
+                  </tr>
+                </thead>
+                <tbody className={styles.myThead}>
+                  <tr className={styles.myTr}>
+                    <td data-column="First Name" className={styles.myTd}>Name</td>
+                    <td data-column="First Name" className={styles.myTd}>{product.ProductName}</td>
+                  </tr>
+                  <tr className={styles.myTr}>
+                    <td data-column="First Name" className={styles.myTd}>Price</td>
+                    <td data-column="First Name" className={styles.myTd}>₹{product.ProductPrice}</td>
+                  </tr>
+                  <tr className={styles.myTr}>
+                    <td data-column="First Name" className={styles.myTd}>Barcode</td>
+                    <td data-column="First Name" className={styles.myTd}>{product.ProductBarcode}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          )}
     
             {error && (
                 <>
