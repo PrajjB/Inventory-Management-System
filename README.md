@@ -7,23 +7,33 @@ It is a simple MERN stack project about Inventory Management that lets the user 
 ### 1. Clone the repository into an IDE of your choice.  
 ### 2. Install the node package manager in both the Frontend and Backend files separately. 
 * For Backend:  
-cd Backend  
-npm install  
-* For Frontend:  
+```
+cd Backend
+npm install
+```
+* For Frontend:
+``` 
 cd Frontend  
 npm install
-
+```
 ### 3. In the MongoDB Compass:
 * Create a database: IMS
 * Create a collection inside that: products
 
 ### 4. To finally run the app, open a split terminal and inside it:  
   * First terminal:
-    1) cd Backend
-    2) npm run server
+       ```
+       cd Backend
+       npm run server
+       ```
   * Second terminal:
-    1) cd Frontend
-    2) npm start
+    ```
+    cd Frontend
+    npm start
+    ```
+
+#Technologies Used:
+
    
 # Output:
 ## 1. POST/CREATE a new product
