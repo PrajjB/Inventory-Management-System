@@ -32,9 +32,36 @@ npm install
     npm start
     ```
 
-#Technologies Used:
+# Technologies Used:
+### Frontend:
+  * **React**:
+    - Built the front UI using reusable components
+    - Managed component lifecycles and states with hooks like `useState` and `useEffect`
+    - RESTful API integration using axios and fetch
+    - Client-side routing using `react-router-dom`
+  * **React-Router-Dom**:
+    - Navlink: It helps add style to the link of the current page so that the user can see what page they're on without reloading.
+    - useParams: This helped me get the product ID from the URL generated to fetch the details.
+    - useNaviagte: This was used to help navigate through different web pages after form submissions or button clicks.
+  * **Axios**:
+    - This was used in making HTTP requests from the React frontend to the express.js backend.
+    - Handled all the RESTful api requests.
+    - Was used in the form submission area to fetch the details of the product.
 
-   
+### Backend:
+  * **Mongoose**:
+    - Acted as the object data modelling library for the MongoDB.
+    - It helped me define schemas and models for my MongoDB collection.
+    - It helped me manage the relationship between data and the data structure consistenly throughout the app.
+  * **Express.js**:
+    - Used express to create RESTful API routes to handle the clients request like modifying, adding, deleting the data.
+    - Provided an easy way to handle these requestions like GET, POST, PUT, DELETE.
+    - Served as the main backend framework connecting the frontend to the database.
+  * **Cors (Cross Origin Resource Sharing)**:
+    - It is a browser security feature that basically stops the frontend from accessing the backend without permission.
+    - It enabled the express backend to send headers allowing for requests from the React frontend.
+    - This allows for safe and smooth communication between the Frontend and Backend.
+
 # Output:
 ## 1. POST/CREATE a new product
 ![image](https://github.com/user-attachments/assets/afc103c2-efd8-4249-a505-510c8dac3a4a)
